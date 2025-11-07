@@ -30,7 +30,7 @@ function A() {
     // Ici on utilise la boucle forEach, comme on a vu en cour slide 44
     obj.forEach(e => {
         // Ici on utilise la Notation Ternaire, comme on a vu en cour slide 42
-        const etat = B((e.note1 + e.note2) / 2) ? "ADMIS" : "AJOURÉ";
+        const etat = B((e.note1 + e.note2) / 2 + 5) ? "ADMIS" : "AJOURÉ";
         // On affiche dans la console avec console.log(), comme on a vu en cour slide 33
         console.log(`${e.id}: ${etat}`);
     });
@@ -39,7 +39,7 @@ function A() {
 // Ici on declare la fonction B(), comme on a vu en cour slide 45
 function B(moy) {
     // Ici on utilise les Opérateurs Rationnels, comme on a vu en cour slide 41
-    return moy > 7.5
+    return moy > 10;
 }
 
 // On acces à l'element par ca identifiant, comme on a vu en cour slide 64
